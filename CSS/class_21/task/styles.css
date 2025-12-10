@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* desktop */
+@media screen and (min-width: 767px) and (max-height: 1024px) {
+    header {
+        background-color: aqua;
+        width: 100vw;
+        height: 20vh;
+        border-top: 1px solid;
+
+
+    }
+    .left {
+        background-color: aquamarine;
+        width: 15vw;
+        height: 100vh;
+        /* border: 1px solid; */
+        float: left;
+
+    }
+    .right {
+        background-color: bisque;
+        /* border: 1px solid; */
+        width: 15vw;
+        height: 100vh;
+        float: right;
+    /* }
+       main {
+        background-color: bisque;
+        border: 1px solid;
+        width: 70vw;
+        height: 60vh;
+        float: right;
+
+
+     } */
+footer  {
+    background-color: blueviolet;
+        width: 150vw;
+        height: 20vh;
+        border-top: 1px solid;
+        float: inline-end;
+}
+/* Tablet */
+    
+}
+@media screen and (min-width: 360px) and (max-height:787px) {
+    header {
+        background-color: aqua;
+        width: 100vw;
+        height: 20vh;
+        border-top: 1px solid;
+    }
+     .left {
+        background-color: aquamarine;
+        width: 50vw;
+        height: 50vh;
+        border: 1px solid;
+        float: left;
+     }
+     .right {
+        background-color: bisque;
+        border: 1px solid;
+        width: 50vw;
+        height: 50vh;
+        float: right;
+     }
+     /* main {
+        background-color: bisque;
+        border: 1px solid;
+        width: 50vw;
+        height: 50vh;
+        float: none; */
+
+
+     }
+     footer {
+     background-color: blueviolet;
+        width: 150vw;
+        height: 20vh;
+        border-top: 1px solid;
+        float: inline-end;
+     }
+}

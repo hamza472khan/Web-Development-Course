@@ -1,0 +1,30 @@
+p {
+     /* line-height: 50px; */
+    /* text-align: justify;
+    font-size: 20px;
+    letter-spacing: 10px;
+    text-align: left;
+    text-align: center;
+    text-align: right;
+    text-indent: ; */
+
+}
+img {
+    vertical-align: text-top;
+    /* vertical-align: text-bottom; */
+    /* vertical-align: baseline; */
+    /* vertical-align: middle; */
+}
+h1 {
+    text-shadow: -5px -10px 20px red;
+    text-indent: 50px;
+}
+.container {
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    box-shadow: 50px 1px 20px grey;
+}
+,container:haver {
+    /* box-shadow: 10px 10px 5px grey; */
+}

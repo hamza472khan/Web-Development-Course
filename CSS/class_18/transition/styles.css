@@ -1,0 +1,23 @@
+.container {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    /* border: 1px solid; */
+    background-color: red;
+    /* transition-property: border-radius; */
+    transition-property: transform, border-radius ;
+    /* transition-delay: 1s; */
+    transition-duration: 2s;
+    /* transition-timing-function: ease-in-out; */
+    transition: transform 3s ease-in-out 1s, border-radius 1s 2s;
+
+
+
+}
+
+.container:hover {
+    border-radius: 50%;
+    /* trsnsform : rotate (360deg) */
+    transform: translate(1000px);
+    transform: scale(1.5);
+}

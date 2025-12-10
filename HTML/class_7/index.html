@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<style>
+	.body {
+		background-color: #f2f2f2;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		height: 100vh;
+	}
+	.form { view-transition-class: center;
+		background: white;
+		padding:25px;
+		border-radius: 8px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
+		width: 300px;
+		margin: 8px 0;
+		border: 1px solid #ccc;
+		border-radius: 8px;
+
+	}
+	h1 {
+		color: purple;
+		text-align: center ;
+	}
+	input, button {
+		width: 100%;
+		padding:10px;
+		margin: 8px 0;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+	}
+	button {
+		background-color: purple;
+		color: white;
+		border: none;
+		curser: pointer;
+	}
+	button: hover{
+		background-color: #45a049;
+		padding-bottom: 20px ;
+	}
+	select {
+		width: 105%;
+		padding: 10px;
+		margin: 8px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+	}
+	
+</style>
+</head>
+
+<body class="body">
+
+	
+	
+	<form action="" class="form">
+		<h1>Registration Form</h1>
+		<label for="name"> <br> Full Name: </label>
+		<input type="text" name="name" placeholder="Enter Your Name.." id="name" minlength="4" maxlength="15"><br><br>
+
+		<label for="email">Email:</label>
+		<input type="email" name="email" placeholder="Enter Your email address.." id="email" > <br><br>
+
+		<label for="Age">Age</label>
+		<input type="number" name="Age" placeholder="Enter Your Age.." id="age" min="15" max="23">
+		<br><br>
+
+		<label for="Gender">Gender</label>
+		<select name="Gender">
+			<option>Male</option>
+			<option selected value="option" disabled>-- Select Your Gender-- </option>
+			<option value="male">Male</option>
+			<option value="Female">Female</option>
+			<option value="other">Other</option>
+		</select>
+		<span>
+		
+		<label for="terms" style="text-align: center" ><a href="https://wekipedia.com" target="_blank" >
+		I Agree all the terms and condition </a>
+		</label>
+	</span>
+
+		<button type="sign in">Sign Up</button>
+
+
+
+
+
+	</form>
+
+</body>
+</html>

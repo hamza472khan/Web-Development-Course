@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Job Application Form</title>
+</head>
+<body>
+	<form action="#" method="post" enctype="multipart/form-data">
+		<!-- Personal Information Section -->
+		<fieldset>
+			<legend>
+				Personal Information
+			</legend>
+
+			<label for="fullname">Full Name</label><br>
+			<input type="text" id="fullname" name="fullname" placeholder="Enter Your Full Name" required> <br><br>
+
+			<label for="email">Email Address</label><br>
+			<input type="email" id="email" name="email" placeholder="example@gmail.com" required> <br><br>
+
+			<label for="phone">Phone Number</label><br>
+			<input type="Number" name="phone" id="phone" placeholder="eg 0310123123123" required><br><br>
+
+			<label for="website">Website or portpolio</label><br>
+			<input type="website" name="website" id="website" placeholder="https://yourportportfolio.com (optional)"><br><br>
+
+			<label for="dob">Date Of Birth</label><br>
+			<input type="Date" name="dob" id="dob" required><br><br>
+		</fieldset>
+
+		<br>
+
+		<select>
+			<option value="select" disabled selected>--Selecte a postion--</option>
+			<option value="frontend" >Fronted Developer</option>
+			<option value="backened" >Backened Develeoper</option>
+			<option value="uiux" >UI/UX DEsigner</option>
+			<option value="qa" >QA Engineer</option>
+		</select><br><br>
+
+		<p>Preferred Work Location:</p>
+            <input type="radio" id="onsite" name="location" value="On-site" required>
+            <label for="onsite">On-site</label><br>
+
+            <input type="radio" id="remote" name="location" value="Remote">
+            <label for="remote">Remote</label><br>
+
+            <input type="radio" id="hybrid" name="location" value="Hybrid">
+            <label for="hybrid">Hybrid</label><br><br>
+
+            <p>Skills:</p>
+            <input type="checkbox" id="html" name="skills" value="HTML">
+            <label for="html">HTML</label><br>
+
+            <input type="checkbox" id="css" name="skills" value="CSS">
+            <label for="css">CSS</label><br>
+
+            <input type="checkbox" id="js" name="skills" value="JavaScript">
+            <label for="js">JavaScript</label><br>
+
+            <input type="checkbox" id="react" name="skills" value="React">
+            <label for="react">React</label><br>
+
+            <input type="checkbox" id="node" name="skills" value="Node.js">
+            <label for="node">Node.js</label><br><br>
+
+            <label for="resume">Upload Resume:</label><br>
+            <input type="file" id="resume" name="resume" required><br><br>
+
+            <label for="about">Write About Yourself:</label><br>
+            <textarea id="about" name="about" rows="5" cols="40" placeholder="Tell us about yourself..." required></textarea><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Extra Section -->
+        <fieldset>
+            <legend>Extra Information</legend>
+
+            <label for="techsearch">Search your favorite tech stack:</label><br>
+            <input type="search" id="techsearch" name="techsearch" placeholder="Search...">
+            <br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="confirm">Confirm Password:</label><br>
+            <input type="password" id="confirm" name="confirm" required><br><br>
+
+
+            <input type="submit" value="Submit Application">
+        </fieldset>
+
+    </form>
+
+    <p>&copy; 2025 Job Portal</p>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+h1 {
+    color: red;
+}
+/* div {
+    color: green;
+    border: 1px solid black; */
+
+}
+
+
+    /* *{
+    margin: 0px;
+    padding: 0px;
+    } */
+     .container {
+        color: firebrick;
+     }
+     .note {
+        background-color: yellow;
+     }
+     #unique {
+        font-size: 20px;
+     }
+     .child_1 {
+        color: blue;
+     }
+     .section_1 {
+        background-color: lightgrey;
+     }
+     .section_1>p {
+        color: purple;
+     }
+     section_1>div {
+        color: orange;
+     }
+     deScendent selector {
+        color: brown;
+     }
+     
+

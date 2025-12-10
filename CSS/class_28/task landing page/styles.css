@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+hero_section {
+    /* border: 2px palevioletred; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.header {
+    width: 100%;
+    height: 20%;
+    border: 2px solid rgb(15, 13, 13);
+    display: flex;
+    gap: 20px;
+    column-gap: 50px;
+
+}
+.headerparent {
+    background-color: white;
+    box-shadow: 4px black;
+    display: flex;
+
+}

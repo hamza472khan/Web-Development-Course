@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Semantic HTML: Better SEO & Accessibility — Client Blog</title>
+  <meta name="description" content="How semantic HTML improves accessibility and SEO. Practical tips and examples for developers and content teams." />
+  <style>
+    /* Minimal, clean styling */
+    :root{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.6;color:#111;background:#fff}
+    body{max-width:900px;margin:28px auto;padding:20px}
+    header, footer, nav, main, article, aside, section{display:block}
+    header{border-bottom:1px solid #eee;padding-bottom:14px;margin-bottom:18px}
+    nav ul{list-style:none;padding:0;display:flex;gap:12px;margin:0}
+    a{color: #0366d6;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .meta{color:#666;font-size:0.95rem;margin-top:6px}
+    .hero{margin:14px 0}
+    figure{margin:0 0 16px 0}
+    img{max-width:100%;height:auto;border-radius:6px}
+    aside{background:#f9f9f9;padding:12px;border:1px solid #f0f0f0;border-radius:6px}
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+    .tag{background:#eef6ff;padding:6px 8px;border-radius:999px;font-size:.875rem}
+    footer{margin-top:28px;padding-top:14px;border-top:1px solid #eee;color:#555;font-size:.95rem}
+    .controls{margin-top:12px}
+    details summary{cursor:pointer}
+    blockquote{margin:8px 0;padding:10px 14px;border-left:4px solid #ddd;background:#fafafa}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;">
+      <div>
+        <h1 style="margin:0;font-size:1.25rem">Client: <span style="font-weight:600">Acme Marketing</span></h1>
+        <p class="meta" aria-hidden="true">Insights & advice for small-business owners</p>
+      </div>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#article">Blog</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article id="article" aria-labelledby="post-title">
+      <header>
+        <h2 id="post-title">Semantic HTML for Small Business Websites: A Practical Guide</h2>
+        <p class="meta">
+          <span>By <a href="#author" rel="author">Jane Doe</a></span>
+          <span aria-hidden="true"> · </span>
+          <time datetime="2025-11-02">November 2, 2025</time>
+        </p>
+      </header>
+
+      <figure class="hero" role="img" aria-labelledby="hero-caption">
+        <img src="https://via.placeholder.com/1200x480?text=Semantic+HTML" alt="Illustration: semantic HTML blocks" />
+        <figcaption id="hero-caption">Using semantic tags makes content easier to find and understand.</figcaption>
+      </figure>
+
+      <section aria-labelledby="why-section">
+        <h3 id="why-section">Why semantic HTML matters</h3>
+        <p>
+          Semantic HTML gives structure and meaning to your page. That helps search engines index content
+          more accurately and assistive technologies present content more naturally. For small businesses,
+          this means better discoverability and a more inclusive experience for customers.
+        </p>
+
+        <blockquote>
+          <p>
+            "Content is king, but structure is its map." <cite>— UX Weekly</cite>
+          </p>
+        </blockquote>
+
+        <p>
+          Key benefits include improved SEO, easier maintenance, and fewer accessibility barriers. Below are
+          practical steps you can apply right now.
+        </p>
+      </section>
+
+      <section aria-labelledby="how-section">
+        <h3 id="how-section">Quick checklist: semantic tags to use</h3>
+        <ul>
+          <li><strong>&lt;header&gt;</strong> — page or article header, site title, nav</li>
+          <li><strong>&lt;nav&gt;</strong> — primary or section navigation</li>
+          <li><strong>&lt;main&gt;</strong> — unique main content container</li>
+          <li><strong>&lt;article&gt;</strong> — an independent blog post or news item</li>
+          <li><strong>&lt;section&gt;</strong> — thematic grouping inside articles</li>
+          <li><strong>&lt;aside&gt;</strong> — related content, ads, or calls to action</li>
+          <li><strong>&lt;footer&gt;</strong> — page or article footer, author bio, copyright</li>
+          <li><strong>&lt;figure&gt;</strong> and <strong>&lt;figcaption&gt;</strong> — media with captions</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="example-section">
+        <h3 id="example-section">An example: converting a product page</h3>
+        <p>
+          Suppose you have a product description inside a generic &lt;div&gt;. Replace it with &lt;article&gt;,
+          add a &lt;header&gt; with the product name and price, use &lt;figure&gt; for images, and an &lt;aside&gt;
+          for related products. That helps both users and crawlers parse the page quickly.
+        </p>
+
+        <details>
+          <summary>Sample snippet (visual)</summary>
+          <pre style="white-space:pre-wrap;padding:8px;background:#f3f3f3;border-radius:6px;margin-top:8px;">
+&lt;article&gt;
+  &lt;header&gt;&lt;h1&gt;Product name&lt;/h1&gt;&lt;/header&gt;
+  &lt;figure&gt;&lt;img src="..." alt="..." /&gt;&lt;figcaption&gt;Product photo&lt;/figcaption&gt;&lt;/figure&gt;
+  &lt;section&gt;Description and specs...&lt;/section&gt;
+  &lt;aside&gt;Related products...&lt;/aside&gt;
+  &lt;footer&gt;SKU, availability&lt;/footer&gt;
+&lt;/article&gt;
+          </pre>
+        </details>
+      </section>
+
+      <section aria-labelledby="tips-section">
+        <h3 id="tips-section">Practical tips before you launch</h3>
+        <ol>
+          <li>Use one unique &lt;main&gt; per page. It should contain your primary content.</li>
+          <li>Wrap independent posts in &lt;article&gt; so they can be syndicated or shared easily.</li>
+          <li>Mark dates with &lt;time datetime="YYYY-MM-DD"&gt; for clarity and machine-readability.</li>
+          <li>Provide descriptive alt text for images. If an image is decorative, use <code>alt=""</code>.</li>
+          <li>Use headings in logical order (h1 → h2 → h3). Don't skip heading levels.</li>
+          <li>Use &lt;aside&gt; for complementary content like related posts, tags, or promo blocks.</li>
+          <li>Consider &lt;mark&gt; to highlight an important phrase in long content.</li>
+        </ol>
+
+        <p>Example inline highlight: The most important KPI is <mark>conversions</mark>.</p>
+      </section>
+
+      <aside aria-labelledby="related" role="complementary">
+        <h4 id="related">Related posts & resources</h4>
+        <ul>
+          <li><a href="#">How to write accessible product descriptions</a></li>
+          <li><a href="#">Local SEO basics for small businesses</a></li>
+          <li><a href="#">Image optimization checklist</a></li>
+        </ul>
+
+        <div class="tags" aria-label="Tags">
+          <span class="tag">SEO</span>
+          <span class="tag">Accessibility</span>
+          <span class="tag">HTML</span>
+        </div>
+
+        <div class="controls" style="margin-top:12px">
+          <form action="#" method="post" aria-label="Subscribe to newsletter">
+            <label for="email" class="sr-only">Email address</label>
+            <input id="email" name="email" type="email" placeholder="Your email" required style="padding:8px;border:1px solid #ddd;border-radius:4px" />
+            <button type="submit" style="padding:8px 12px;margin-left:8px;border-radius:6px;border:0;cursor:pointer">Subscribe</button>
+          </form>
+        </div>
+      </aside>
+
+      <footer aria-labelledby="post-footer">
+        <p id="post-footer" style="margin:8px 0 0 0;color:#444">Was this helpful? Let us know — we’ll update this guide regularly.</p>
+      </footer>
+    </article>
+
+    <section id="comments" aria-labelledby="comments-heading" style="margin-top:22px">
+      <h3 id="comments-heading">Reader comments (sample)</h3>
+
+      <article aria-labelledby="c1" style="border:1px solid #eee;padding:12px;border-radius:6px;margin-bottom:8px">
+        <header>
+          <strong id="c1">Sam Patel</strong>
+          <p class="meta"><time datetime="2025-10-20">Oct 20, 2025</time> — <span>Small business owner</span></p>
+        </header>
+        <p>Great checklist — saved me time when I updated our product pages.</p>
+      </article>
+
+      <article aria-labelledby="c2" style="border:1px solid #eee;padding:12px;border-radius:6px">
+        <header>
+          <strong id="c2">Aisha R.</strong>
+          <p class="meta"><time datetime="2025-09-15">Sep 15, 2025</time></p>
+        </header>
+        <p>Would you recommend semantic tags for legacy pages? <br /><a href="#contact">Contact us</a> and we’ll run a quick audit.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer id="contact" aria-labelledby="footer-heading">
+    <h4 id="footer-heading">Contact & legal</h4>
+    <address>
+      <strong>Acme Marketing</strong><br />
+      123 Market Street, Lahore, Pakistan<br />
+      <a href="mailto:hello@acmemarketing.example">hello@acmemarketing.example</a>
+    </address>
+
+    <p style="margin-top:8px">© <time datetime="2025">2025</time> Acme Marketing. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: urdu;
+    /* src: url(../../../Fonts/Bitcount_Grid_Single/BitcountGridSingle-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf); */
+    src: url(../../../Fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Bold.ttf);
+    src: url(../../../Fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Regular.ttf);
+}
+th, td {
+ border-bottom: 1px solid;
+  padding: 10px;
+  width: 100vw;
+  font-family: urdu;
+  
+}
+table {
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100vw;
+    border-collapse: collapse;
+    
+
+}
+th {
+    background: rgb(15, 149, 194);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+tr:hover {
+    background-color: aqua;
+}

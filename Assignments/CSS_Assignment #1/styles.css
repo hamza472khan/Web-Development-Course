@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.parent {
+    
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+.paragraph_parent {
+    display: grid;
+    align-items: center;
+    width: 550px;
+    gap: 40px;
+    justify-content: start;
+    
+  
+}
+.line {
+    background-color: burlywood;
+    height: 5px;
+    width: 118px;
+    border-radius: 3px;
+}
+.John {
+    color: burlywood;
+    display: inline;
+}
+.continue > a {
+    a:visited {
+        text-decoration: none;
+        color: burlywood;
+    }
+
+}

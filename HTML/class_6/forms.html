@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <!-- minlength: minimum length -->
+    <!-- maxlength: miximum length -->
+    <h1>Html Form </h1>
+    <form action="" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" placeholder="Enter your name" id="name">
+        <br><br>
+        <label for="">Email:</label>
+        <input type="email" placeholder="Enter your email">
+        <br><br>
+        <label for="">Password:</label>
+        <input type="password" placeholder="Enter your password"><br><br>
+
+
+        <label for="">Gender</label>
+        <input type="radio" name="Gender" value="male"> female
+        <input type="radio" name="Gender" value="female"> male
+        <br><br>
+
+        <label for="">Languages</label>
+        <input type="checkbox" name="Languages" id="">English
+        <input type="checkbox" name="Languages" id="">French
+        <input type="checkbox" name="Languages" id="">Spanish
+        <input type="checkbox" name="Languages">others
+        <br><br>
+
+        <label for="">coverlatter</label><br>
+        <textarea name="coverlatter" id="coverlatter" cols="30" rows="10" placeholder="write your coverlatter here"
+            rows="10" column="60"></textarea>
+        <br>
+        <input type="submit" name="submit" id="">
+        <br><br>
+
+        <label for="">country</label>
+        <select name="country" id="">
+            <option selected value="pakistan">pakistan</option>
+            <option value="turkry">turkry</option>
+            <option value="afg">afg</option>
+            <option value="china">china</option>
+            <option value="uganda">uganda</option>
+            <option value="palastine">palastine</option>
+            <option value="uae">uae</option>
+            <option value="kas">ksa</option>
+            <option value="japan">japan</option>
+            <option value="ashnaghray">ashnaghray</option>
+        </select>
+        <time datetime="time">time
+            <input type="time" name="bday">
+        </time>
+        date:
+        <input type="date" name="bday">
+
+        file:
+        <input type="file" name="file">
+        <br><br>
+    </form>
+    <input type="submit" name="submit" id="">
+
+</body>
+
+</html>

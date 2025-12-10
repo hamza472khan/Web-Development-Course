@@ -1,0 +1,33 @@
+/* existance selector
+h1[id]{
+color: magenta;
+}
+p[class][id]{
+    background-color: aqua;
+}
+
+/* equality Selector 
+p[class="para"]{
+    font-size: 20px;
+}
+
+/* Space selector 
+p [class="para"]{
+    color: rgba ( red, greenyellow, magenta, 0.5)
+}
+/* prefix selector 
+p[class^="par"]{
+    font-weight: bold;
+}
+
+/* Suffix selector 
+p[class $="desc"]{
+    font-style: italic;
+}
+/* Substring selector  
+input[type="ex"]{*/
+
+
+p[class*="dog"] {
+  color: orange;
+}

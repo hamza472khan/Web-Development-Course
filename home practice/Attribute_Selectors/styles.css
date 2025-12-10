@@ -1,0 +1,35 @@
+h1 {
+    color: magenta;
+}
+
+/* Existance Selector */
+a[href]{
+    color: red;
+    font-weight: bold;
+}
+
+/* Equiltiy Selector */
+a[target="_blank"]{
+    color: blue;
+}
+
+/* Prefix Selector */
+a[href^=https]{
+    font-size: 150%;
+
+}
+
+/* Suffix Selector */
+a[href$="org"]{
+text-transform: uppercase;
+}
+
+/* Substring Selector */
+a[href*="oo"]{
+    float: right;
+}
+
+/* Space Selector */
+a[href~="alt" target]{
+    font-size: 200%;
+}

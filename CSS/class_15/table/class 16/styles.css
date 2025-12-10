@@ -1,0 +1,16 @@
+label {
+    display: block;
+    
+}
+
+input:hover {
+    background-color: rgb(126, 131, 129);
+
+}
+input {
+    border: 1px solid gray ;
+    margin: auto;
+}
+form {
+    margin: auto;
+}

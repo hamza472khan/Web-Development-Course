@@ -1,0 +1,46 @@
+body {
+    background-color: brown;
+}
+/* large screen */
+@media screen and (min-width: 1400px) {
+    body {
+        background-color: aqua;
+    }
+   
+}
+ /* laptop */
+@media screen and (min-width: 1024px) and (max-width: 1400px){
+    body {
+        background-color: blue;
+    }
+}
+/* small laptop */
+@media screen and (min-width : 768px) and (max-width : 1024px){
+    body {
+        background-color: chocolate;
+    }
+}
+/* tablet */
+@media screen and (min-width : 600px) and (max-width: 767px) {
+    body {
+        background-color: rgb(110, 18, 196) :
+    }
+}
+/* moile */
+@media screen and (min-width : 599px) and (max-width : 768px){
+    body {
+        background-color: rgb(167, 44, 167);
+    }
+}
+@media screen and (min-width: 598px) and (max-width: 767px) {
+    body {
+        background-color: chartreuse;
+    }
+    
+}
+/* small */
+@media screen and (min-width: 320px) and (max-width: 597px){
+    body {
+        background-color: cornflowerblue;
+    }
+}

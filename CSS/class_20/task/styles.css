@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.continer {
+    border-radius: 10px;
+    background-color: rgb(211, 230, 230);
+    padding: 5px;
+    margin: 4px;
+    width: 350px;
+    height: 500px;
+    border: 1px solid;
+
+
+}
+.container_2 {
+    /* border: 1px solid; */
+
+    
+}
+.container_2:hover {
+    border-radius: 20px;
+    border-radius: 10px;
+    transform: scale(1.1);
+
+}
+
+.name {
+    border-radius: 10px;
+    background-color: antiquewhite;
+    font-size: 30px;
+    text-align: center;
+    
+    height: 50px;
+    border: 1px solid;
+    transition: transform 3s ease-in-out 1s, border-radius 1s 2s;
+
+}
+.about {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 5px;
+    text-align: center;
+    overflow: auto;
+    border: 1px solid;
+    width: 330px;
+    height: 200px;
+}
+.contact > button {
+    border-radius: 10px;
+    width: 330px;
+    padding: 2px 1px;
+    margin: 2px 1px;
+    background-color: rgb(136, 148, 149);
+}
+.contact > button:hover {
+    border-radius: 10px;
+    background-color: rgb(160, 97, 13);
+
+}
+@keyframes blinking {
+    transition: transform 3s ease-in-out 1s, border-radius 1s 2s;
+
+}
+.name:hover {
+        background-color: blueviolet;
+    animation-name: blinking;
+    transition-duration: 6s;
+    transition-delay: 6s;
+    animation-iteration-count: infinite;
+}
+.about:hover {
+    background-color: aqua;
+}
