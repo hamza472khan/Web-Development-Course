@@ -1,0 +1,28 @@
+.container {
+  display: grid;
+  grid-columns: 200px 1fr 1fr; /* 3 columns */
+  grid-rows: auto 1fr auto;    /* 3 rows */
+  gap: 10px;
+  
+  /* The Map: Each string is a row, each word is a column cell */
+  grid-template-areas: 
+    "header header header"
+    "sidebar main main"
+    "footer footer footer";
+}
+
+/* Assigning the children to the map names */
+.header  { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.content { grid-area: main; }
+.footer  { grid-area: footer; }
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-areas: 
+      "header"
+      "main"
+      "sidebar"
+      "footer";
+  }
+}

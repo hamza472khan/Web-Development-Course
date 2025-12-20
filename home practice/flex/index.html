@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox Side-by-Side Example</title>
+<style>
+  /* --- CSS Styles --- */
+
+  /* 1. The Parent Container */
+  .flex-container {
+    display: flex;           /* Enables flexbox */
+    align-items: center;     /* Vertically centers text with the image */
+    gap: 30px;               /* Adds space between image and text */
+    
+    /* Just for presentation */
+    border: 1px solid #ddd;
+    padding: 20px;
+    max-width: 800px;
+    margin: 50px auto;
+    font-family: sans-serif;
+  }
+
+  /* 2. The Children (Flex Items) */
+  
+  /* Image container: keeping it from growing too large */
+  .image-content {
+    flex: 0 0 auto; 
+    /* Don't grow, don't shrink, stay at auto size */
+  }
+  
+  /* Make the image responsive within its container */
+  .image-content img {
+    max-width: 250px;
+    height: auto;
+    display: block; /* Removes bottom space under image */
+    border-radius: 8px;
+  }
+
+  /* Text container: takes up remaining space */
+  .text-content {
+    flex: 1 1 auto; /* Can grow and shrink to fill space*/
+  }
+
+  .text-content h2 {
+    margin-top: 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="image-content">
+    <img src="https://picsum.photos/id/237/300/200" alt="A cute black dog">
+  </div>
+  
+  <div class="text-content">
+    <h2>Side-by-Side Layout</h2>
+    <p>This text appears perfectly aligned next to the image. Flexbox makes this incredibly easy. The <code>align-items: center</code> property on the parent ensures that this text block is vertically centered relative to the image's height.</p>
+    <p>No floats, no confusing positioning, just simple flexible boxes.</p>
+  </div>
+</div>
+
+</body>
+</html>

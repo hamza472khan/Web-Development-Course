@@ -15,3 +15,19 @@
 // let y = 20;
 
 // console.log(x+=y*2);
+
+
+
+//not equal operator
+// console.log(2 != 2);//false
+// console.log(2 != "2");// false
+// console.log(2 !== "2"); //true
+
+
+console.log(5>9);//false
+console.log(5>3);//true
+console.log(5>=3);//true
+console.log(4<=3);//false
+console.log(9<3);//false
+
+

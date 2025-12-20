@@ -34,3 +34,11 @@ console.log(question);
 let view = `your name is "mike"?`;
 console.log(view)
 
+a = 20;
+console.log(a);
+
+let a = 30;
+
+
+
+
