@@ -1,0 +1,21 @@
+.container {
+    background-color: red;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    gap: 0px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* justify-items: center ; */
+    /* grid-template-areas: "box_1 box_2 box_3 box_4" */
+                           /* "box_5 box_5 box_5 box_5"; */
+    grid-template-areas:
+    "box_1 box_2"
+    "box_3 box_4"
+    "box_5 box_5";
+}
+.item {
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+}

@@ -1,0 +1,31 @@
+.grid_container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    gap: 1px;
+    /* justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    grid-auto-rows: 300px;
+    grid-auto-flow: column; */
+
+    grid-template-areas:
+        "box-1 box-2 box-2 box=3"
+        "box-2 box-4 box-5 box-5";
+
+
+}
+
+.item {
+    height: 50px;
+    width: 50px;
+    padding: 2em;
+    background: rgb(6, 18, 23);
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1rem;
+
+}
