@@ -32,3 +32,18 @@ function greet(name, callMe) {
 
 }
 greet("hamza", callMe);
+
+function myDisplayer(some){
+    console.log("Hamza2");
+    
+}
+function myFirst(){
+    myDisplayer("Hellowww");
+}
+function mySecond(){
+    myDisplayer("GoodBye!")
+}
+myFirst();
+mySecond();
+
+  
