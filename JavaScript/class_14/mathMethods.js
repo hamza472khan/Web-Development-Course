@@ -17,13 +17,13 @@ console.log(Math.sqrt(64));
 // round
 
 let a = 5.1;
-let b = 5.6;
-console.log(Math.round(a));// op 5
+let b = 5.8;
+console.log(Math.round(a));// op 5 checking if the value is greater than .5 then shows greater value otherwise lower value
 console.log(Math.round(b));// op 6
 
 //random
 
-// console.log(Math.random(a));
+// console.log(Math.random(a)); // giving random values
 // console.log(Math.random(b));
 // console.log(Math.random()*10);
 // console.log(Math.random() * 10) + 1;
@@ -37,6 +37,19 @@ function getRandomInteger(min, max) {
   }
 console.log(getRandomInteger(10, 20));
 
+console.log(Math.floor(a));//roundup finishes the point and show exact valve 
+console.log(Math.floor(b));
 
+
+//trunc() : finishes the point and giving origional value
+console.log(Math.trunc(a));
+
+//abs() : negative value ko khatam karta hain
+let g = -8.3;
+console.log(Math.abs(g)); // 9.3
+
+//num.toFixed()
+
+console.log(numbers1.toFixed(1));// shows 1 value after point
 
 
