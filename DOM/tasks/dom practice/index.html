@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <script async src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section>
+        <h2>Change Text</h2>
+        <p id="text">This the child element of the div</p>
+        <button onclick="changeText()">Change Text</button>
+    </section>
+
+    <section>
+        <h2>Change Background Color</h2>
+        <p>Chick on button to change the background color</p>
+        <button onclick="changeColor('green')"> green </button>
+        <button onclick="changeColor('blue')"> Blue</button>
+        <button onclick="changeColor('yellow')"> Yellow</button>
+    </section>
+
+    <section>
+        <h2>Show/ Hide Box </h2>
+        <div id="box">This is a Box</div>
+        <button onclick="hideBox()">Hide Box</button>
+        <button onclick="showBox()">Show Box</button>
+    </section>
+
+    <!-- task-5 -->
+    <section>
+        <h2>Add OR Remove Class</h2>
+        <div class="box1" id="box1"></div>
+        <button onclick="toggleClass()">Add/Remove</button>
+    </section>
+
+    <!-- task- 6 -->
+
+    <section>
+        <h2>write text and show</h2>
+        <input type="text" id="input">
+        <button onclick="showValue()">show</button>
+        <p id="result"></p>
+    </section>
+    <!-- task-7  -->
+    <section>
+        <h2>Add items to list</h2>
+        <ul id="list">List</ul>
+        <button onclick="addItmes()">add</button>
+    </section>
+
+    <section>
+        <h2>Delete Items from the list</h2>
+
+        <ul>
+            <li>item 1 <button onclick="deleteItem(this)">Delete</button></li>
+            <li>item 2 <button onclick="deleteItem(this)">Delete</button></li>
+            <li>item 3 <button onclick="deleteItem(this)">Delete</button></li>
+            <li>item 4 <button onclick="deleteItem(this)">Delete</button></li>
+
+        </ul>
+    </section>
+
+    <section>
+        <h2>counter</h2>
+        <h1 id="count1">0</h1>
+        <button onclick="increase()">+</button>
+        <button onclick="decrease()">-</button>
+    </section>
+
+    <section>
+        <h2>change image </h2>
+        <img id="img" src="../../../images/Group 1.png">
+        <br><br>
+        <button onclick="changeImage()">Change Image</button>
+    </section>
+
+</body>
+
+</html>

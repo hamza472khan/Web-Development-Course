@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Mainipulation</title>
+    <script async src="script.js"></script>
+    <style>
+        .parent {
+            width: 200px;
+            height: 200px;
+            background-color: lightslategrey;
+            
+        }
+        .box {
+            width: 400px;
+            height: 400px;
+            background-color: rgb(35, 42, 42);
+            background-image: url(../../../images/hamza.jpg);
+        }
+        .dark-mode {
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .light-mode {
+            background-color: white;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body class="light-mode">
+
+    <div id="parentEle" class="parent"></div>
+
+
+
+    <button onclick="addClass()">Add Box Class</button>
+
+    <button onclick="removeClass()">Remove Box Class</button>
+
+    <button id="changeModeBtn" onclick="changeMode()">Change Mode</button>
+    
+</body>
+</html>

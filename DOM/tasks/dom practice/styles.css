@@ -1,0 +1,33 @@
+section {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+button {
+    margin: 5px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+#box {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    padding-top: 10px;
+}
+.box {
+    width: 150px;
+    height: 100px;
+    background-color: gray;
+}
+.active {
+    height: 100px;
+    width: 100px;
+    background: orange;
+}

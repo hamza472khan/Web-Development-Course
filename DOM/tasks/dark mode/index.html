@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark mode</title>
+    <style>
+       
+        .box {
+            width: 400px;
+            height: 400px;
+            background-color: rgb(35, 42, 42);
+            background-image: url(../../../images/hamza.jpg);
+        }
+        .dark-mode {
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .light-mode {
+            background-color: white;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body class="light-mode">
+    <h1>Dark Mode Toggle</h1>
+
+    <div id="parentEle" class="parent"></div>
+    <button id="changeModeBtn" onclick="changeMode()">Change Mode</button>
+
+
+    <script>
+        let changeModeBtn = document.getElementById("changeModeBtn");
+
+        function changeMode() {
+            let body = document.body;
+            let isLight = body.classList.contains("light-mode");
+
+            if (isLight == true) {
+                changeModeBtn.innerText = "Light Mode";
+                body.classList.add("dark-mode");
+                body.classList.remove("light-mode");
+
+            } else {
+                changeModeBtn.innerText = "Dark Mode";
+                body.classList.add("light-mode");
+                body.classList.remove("dark-mode");
+            }
+        }
+    </script>
+</body>
+
+</html>
