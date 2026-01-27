@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+    <script async src="script.js"></script>
+    <style>
+        .notify {
+            border-left: 2px solid gold;
+            padding: 10px 30px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px gray;
+            width: fit-content;
+            bottom: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showNotification">Snow Notification</button>
+    <div class="notify">Break ke baad jaldhi aya kary</div>
+    <div id="clock" class="clock"></div>
+
+    <button onclick="stopAlert()">Stop Alert</button>
+    <button onclick="stopClock()">Stop Time</button>
+    
+</body>
+</html>
