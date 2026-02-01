@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HamzaKhan_DOM_Assignment-1</title>
+    <script async src="script.js"></script>
+    <style>
+        .light-mode {
+            background-color:  #ADD8E6;
+            color: black;
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+        button{
+            background-color: lavender;
+            padding: 9px;
+        }
+    </style>
+</head>
+
+<body class="light-mode"
+    style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <h1>Hamza Khan DOM Assignment-1</h1>
+
+    <!-- Creating heading with text Hellow World -->
+    <h3 id="h3">Hellow World</h3>
+
+    <!-- Change Paragraph Text on Button -->
+
+    <p id="p">Hellow This is a Paragraph I want to change this using Dom </p>
+
+    <Button onclick="changeText()">Change Text</Button>
+
+    <h1>Change Background Color</h1>
+    <p>Change Background Color To Light Blue</p>
+
+    <button onclick="changeBgColor()" id="btnMode">Change Background Color</button>
+
+    <!-- Show Alert on Button Click -->
+     <h1>Show Alert Message On Button Click</h1>
+    <button onclick="showAlert()">Show Alert</button>
+
+    <!-- Update text using input field -->
+    <h1>Update Text Using Input Field</h1>
+    <input type="text" id="inputField" placeholder="Enter new text">
+    <button id="btnUpdate" onclick="changeTextPara()">Update Text</button>
+    <p id="result"></p>
+</body>
+
+</html>
