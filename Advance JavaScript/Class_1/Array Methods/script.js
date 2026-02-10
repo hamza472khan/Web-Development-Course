@@ -183,3 +183,9 @@ console.log(canVote); // "Yes, you can vote."
 let access = (age < 13) ? "Child Access" : (age >= 13 && age < 20) ? "Teen Access" : "Adult Access";
 console.log(access); // "Teen Access"   
 
+
+
+//call back function
+//higher order function
+//local storage
+//
